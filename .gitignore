@@ -27,3 +27,6 @@ build/
 
 # Raw data added locally, not versioned
 dataset/
+
+# local tests for development
+local/
