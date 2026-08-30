@@ -1,1 +1,8 @@
-"""Preprocessing methods to compute ICA."""
+"""Preprocessing module"""
+
+from ica.preprocessing.base import BasePreprocessor
+
+__all__ = [
+    "BasePreprocessor",
+    
+]
