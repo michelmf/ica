@@ -9,7 +9,8 @@ from torch.utils.data import Dataset
 class BaseDataset(Dataset[Tensor], ABC):
     """Base dataset class for multiple sources."""
 
-    def __init__(self, source: Path) -> None:
+    def __init__(self, source: Path, alias: str | None = None) -> None:
+        self.alias = alias
         self.load(source)
 
     @abstractmethod
@@ -21,3 +22,7 @@ class BaseDataset(Dataset[Tensor], ABC):
 
     @abstractmethod
     def __getitem__(self, index: int) -> Tensor: ...
+
+    @abstractmethod
+    def to_tensor(self) -> Tensor:
+        """Build the observed mixture matrix X, depending on the source's nature."""
