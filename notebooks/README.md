@@ -1,0 +1,3 @@
+# Independent Component Analysis Experiments
+
+This folder contains example Jupyter notebooks for experimenting with and demonstrating different features of the project. The notebooks showcase the usage of various datasets (audio, image, tabular) and models, provide sample pipelines for preprocessing and ICA, and serve as references for running, testing, and visualizing results using the library's components.

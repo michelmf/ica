@@ -1,4 +1,4 @@
-# ica
+# Independent Component Analysis (ICA)
 
 Independent Component Analysis toolkit, implemented from the theory in Hyvärinen,
 Karhunen & Oja (2001). Built as coursework for the ICA class. Not intended as a
