@@ -4,7 +4,7 @@ from typing import Literal
 import torch
 from torch import Tensor
 
-from ica.model.base import FixedPointICA, Orthogonalization
+from ica.model.fixed_point import FixedPointICA, Orthogonalization
 
 Nonlinearity = Literal["logcosh", "gauss", "cube"]
 

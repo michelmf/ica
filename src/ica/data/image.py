@@ -8,10 +8,10 @@ from ica.data.tabular import TabularDataset
 
 class ImageDataset(TabularDataset):
     """
-    Dataset containing mixture columns from a single CSV file, one column
-    per flattened source/mixture image (Example 12.3, p.258). Loading is
-    identical to `TabularDataset`; the only addition is reshaping a column
-    back into a 2D image for display.
+    Dataset for image mixtures, where each column in the CSV represents a 
+    single flattened image. Inherits data loading from `TabularDataset`, 
+    with the added capability to reshape columns back into 2D images for 
+    visualization or further processing.
     """
 
     def to_image(self, index: int, height: int | None = None) -> Tensor:

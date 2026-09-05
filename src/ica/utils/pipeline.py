@@ -38,3 +38,5 @@ class Pipeline:
             step.fit(X)
             X = step.transform(X)
         return X
+
+    # TODO: add __add__ behavior

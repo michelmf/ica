@@ -1,7 +1,7 @@
 """ICA by maximization of kurtosis (Section 8.2)."""
 from torch import Tensor
 
-from ica.model.base import FixedPointICA
+from ica.model.fixed_point import FixedPointICA
 
 
 class Kurtosis(FixedPointICA):

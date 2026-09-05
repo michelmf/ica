@@ -12,7 +12,7 @@ class TabularDataset(BaseDataset):
     """Dataset containing mixture columns from a single CSV file."""
 
     def load(self, source: Path) -> None:
-        """Load the CSV at `source` eagerly; each column is one mixture source."""
+        """Load the CSV. Each column is one mixture source."""
         self.path = source
 
         if not self.path.exists():
